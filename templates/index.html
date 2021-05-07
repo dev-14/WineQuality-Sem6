@@ -7,52 +7,57 @@
 {% block body %}
 <form action="{{ url_for('index') }}" method="POST" class="form-group">
     <div class="container-fluid row align-items-center">
-        <div class="col-6">
+        <div class="form-group col-6">
 
             <div class= 'form-control'>
                 <label for="input1">SULPHATES :</label>
                 <input type="text" class="" id="input1" name="sulphates" placeholder=" ">
             </div>
-
+            <br>
+            <br>
             <div class= 'form-control'>
                 <label for="input2">ALCOHOL :</label>
                 <input type="text" class="" id="input2" name="alcohol" placeholder=" ">
             </div>
-
+            <br><br>
             <div class= 'form-control'>
                 <label for="input3">DENSITY :</label>
                 <input type="text" class="" id="input3" name="density" placeholder=" ">
             </div>
 
         </div>
-        <div class="col-6  ">
+        <div class="col-6 form-group ">
 
             <div class= 'form-control'>
                 <label for="input4">pH :</label>
                 <input type="text" class="" id="input4" name="pH" placeholder=" ">
-
             </div>
+            <br>
+            <br>
             <div class= 'form-control'>
-                <label for="input5">Chlorides :</label>
+                <label for="input5">CHLORIDES :</label>
                 <input type="text" class="" id="input5" name="chlorides" placeholder=" ">
 
             </div>
+            <br>
+            <br>
             <div class= 'form-control'>
-                <label for="input6">Sulphur Dioxide :</label>
+                <label for="input6">SULPHUR DIOXIDE :</label>
                 <input type="text" class="" id="input6" name="tso2" placeholder=" ">
             </div>
 
         </div>
 
     </div>
-    <div class="row">
-            <div class= 'form-control'>
-               <button class="form-control" type="submit" >
+    <div class="row container-fluid  align-items-center">
+            <div class= 'form-group sButton'>
+                <br><br>
+               <button class="form-control" class="btn btn-dark" type="submit" >
                    Submit
                </button>
             </div>
     </div>
-
 </form>
+
 
 {% endblock %}

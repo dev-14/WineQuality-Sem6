@@ -57,11 +57,9 @@ body {
     /* background-color: black; */
 }
 
-input {
-    background-color: blue;
-    color: green;
+input{
+width : min-content;
 }
-
 .sButton {
     display: flex;
     justify-content: center;
