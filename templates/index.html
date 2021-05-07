@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+<!-- <a href=""></a> -->
+{% block style %} <link rel="stylesheet" href='../static/index.css'> {% endblock %}
+{% block title %} ML MINI PROJECT {% endblock %}
+<!-- BODY PART  -->
+{% block body %}
+<form action="{{ url_for('index') }}" method="POST" class="form-group">
+    <div class="container-fluid row align-items-center">
+        <div class="col-6">
+
+            <div class= 'form-control'>
+                <label for="input1">SULPHATES :</label>
+                <input type="text" class="" id="input1" name="sulphates" placeholder=" ">
+            </div>
+
+            <div class= 'form-control'>
+                <label for="input2">ALCOHOL :</label>
+                <input type="text" class="" id="input2" name="alcohol" placeholder=" ">
+            </div>
+
+            <div class= 'form-control'>
+                <label for="input3">DENSITY :</label>
+                <input type="text" class="" id="input3" name="density" placeholder=" ">
+            </div>
+
+        </div>
+        <div class="col-6  ">
+
+            <div class= 'form-control'>
+                <label for="input4">pH :</label>
+                <input type="text" class="" id="input4" name="pH" placeholder=" ">
+
+            </div>
+            <div class= 'form-control'>
+                <label for="input5">Chlorides :</label>
+                <input type="text" class="" id="input5" name="chlorides" placeholder=" ">
+
+            </div>
+            <div class= 'form-control'>
+                <label for="input6">Sulphur Dioxide :</label>
+                <input type="text" class="" id="input6" name="tso2" placeholder=" ">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+            <div class= 'form-control'>
+               <button class="form-control" type="submit" >
+                   Submit
+               </button>
+            </div>
+    </div>
+
+</form>
+
+{% endblock %}

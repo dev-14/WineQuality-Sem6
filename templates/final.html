@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} ML MINI PROJECT {% endblock %}
+{% block style %} <link rel="stylesheet" href='../static/index.css'> {% endblock %}
+{% block body %}
+<div class=" container-fluid ">
+    <div class="input-group mb-3 finalPage" style="margin:20%; width:45%; height:66px; font-size:20px; box-shadow : 2px 3px 6px " >
+        <span class="input-group-text" id="basic-addon1">THE PREDICTED VALUE IS : </span>
+        <input type="text" name="" class="form-control" placeholder="" readonly aria-label="Username" value="{{quality}}" aria-describedby="basic-addon1">
+    </div>
+</div>
+{% endblock %}
